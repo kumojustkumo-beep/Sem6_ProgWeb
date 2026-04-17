@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("publico"));
+app.use(express.static("public"));
 
 const ARCHIVO_DATOS = path.join(__dirname, "data", "datos.json");
 
